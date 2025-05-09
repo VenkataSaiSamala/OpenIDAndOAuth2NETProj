@@ -1,0 +1,25 @@
+{
+    "version":"0.2.0",
+    "configuration":[
+        {
+            "name" : ".NET Core Launch (api)",
+            "type" : "coreclr",
+            "request":"launch",
+            "preLaunchTask":"build",
+            "program": "/Users/venkatasamala/NETPROJECT/OAUTH2-OPENID-PROJECT/ImageGallery.API/bin/Debug/net8.0/ImageGallery.API.dll"
+        },
+        {
+            "name" : ".NET Core Launch (client)",
+            "type" : "coreclr",
+            "request":"launch",
+            "preLaunchTask":"build",
+            "program": "/Users/venkatasamala/NETPROJECT/OAUTH2-OPENID-PROJECT/ImageGallery.Client/bin/Debug/net8.0/ImageGallery.Client.dll"
+        }
+    ],
+    "compounds" : [
+        {
+            "name":"Compound",
+            "configurations":[".NET Core Launch (api)", ".NET Core Launch (client)"]
+        }
+    ]
+}

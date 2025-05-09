@@ -1,0 +1,11 @@
+/Users/venkatasamala/NETPROJECT/OAUTH2-OPENID-PROJECT/ImageGallery.Model/bin/Debug/net8.0/ImageGallery.Model.deps.json
+/Users/venkatasamala/NETPROJECT/OAUTH2-OPENID-PROJECT/ImageGallery.Model/bin/Debug/net8.0/ImageGallery.Model.dll
+/Users/venkatasamala/NETPROJECT/OAUTH2-OPENID-PROJECT/ImageGallery.Model/bin/Debug/net8.0/ImageGallery.Model.pdb
+/Users/venkatasamala/NETPROJECT/OAUTH2-OPENID-PROJECT/ImageGallery.Model/obj/Debug/net8.0/ImageGallery.Model.GeneratedMSBuildEditorConfig.editorconfig
+/Users/venkatasamala/NETPROJECT/OAUTH2-OPENID-PROJECT/ImageGallery.Model/obj/Debug/net8.0/ImageGallery.Model.AssemblyInfoInputs.cache
+/Users/venkatasamala/NETPROJECT/OAUTH2-OPENID-PROJECT/ImageGallery.Model/obj/Debug/net8.0/ImageGallery.Model.AssemblyInfo.cs
+/Users/venkatasamala/NETPROJECT/OAUTH2-OPENID-PROJECT/ImageGallery.Model/obj/Debug/net8.0/ImageGallery.Model.csproj.CoreCompileInputs.cache
+/Users/venkatasamala/NETPROJECT/OAUTH2-OPENID-PROJECT/ImageGallery.Model/obj/Debug/net8.0/ImageGallery.Model.dll
+/Users/venkatasamala/NETPROJECT/OAUTH2-OPENID-PROJECT/ImageGallery.Model/obj/Debug/net8.0/refint/ImageGallery.Model.dll
+/Users/venkatasamala/NETPROJECT/OAUTH2-OPENID-PROJECT/ImageGallery.Model/obj/Debug/net8.0/ImageGallery.Model.pdb
+/Users/venkatasamala/NETPROJECT/OAUTH2-OPENID-PROJECT/ImageGallery.Model/obj/Debug/net8.0/ref/ImageGallery.Model.dll
