@@ -125,3 +125,4 @@
 /Users/venkatasamala/NETPROJECT/OAUTH2-OPENID-PROJECT/ImageGallery.API/obj/Debug/net8.0/ImageGallery.API.pdb
 /Users/venkatasamala/NETPROJECT/OAUTH2-OPENID-PROJECT/ImageGallery.API/obj/Debug/net8.0/ImageGallery.API.genruntimeconfig.cache
 /Users/venkatasamala/NETPROJECT/OAUTH2-OPENID-PROJECT/ImageGallery.API/obj/Debug/net8.0/ref/ImageGallery.API.dll
+/Users/venkatasamala/NETPROJECT/OAUTH2-OPENID-PROJECT/ImageGallery.API/obj/Debug/net8.0/ImageGallery.API.sourcelink.json

@@ -50,3 +50,4 @@
 /Users/venkatasamala/NETPROJECT/OAUTH2-OPENID-PROJECT/Marvin.IDP/bin/Debug/net8.0/Marvin.IDP.staticwebassets.runtime.json
 /Users/venkatasamala/NETPROJECT/OAUTH2-OPENID-PROJECT/Marvin.IDP/obj/Debug/net8.0/Marvin.IDP.RazorAssemblyInfo.cache
 /Users/venkatasamala/NETPROJECT/OAUTH2-OPENID-PROJECT/Marvin.IDP/obj/Debug/net8.0/Marvin.IDP.RazorAssemblyInfo.cs
+/Users/venkatasamala/NETPROJECT/OAUTH2-OPENID-PROJECT/Marvin.IDP/obj/Debug/net8.0/Marvin.IDP.sourcelink.json
