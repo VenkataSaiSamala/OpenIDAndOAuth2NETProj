@@ -34,7 +34,6 @@ namespace ImageGallery.Client.Controllers
 
             var response = await httpClient.SendAsync(
                 request, HttpCompletionOption.ResponseHeadersRead).ConfigureAwait(false);
-
             response.EnsureSuccessStatusCode();
 
             using (var responseStream = await response.Content.ReadAsStreamAsync())
@@ -188,14 +187,17 @@ namespace ImageGallery.Client.Controllers
         {
             var identityToken = await HttpContext.GetTokenAsync(OpenIdConnectParameterNames.IdToken);
 
+            var accessToken = await HttpContext.GetTokenAsync(OpenIdConnectParameterNames.AccessToken);
+
+
             var userClaimsStringBuilder = new StringBuilder();
             foreach(var claim in User.Claims)
             {
                 userClaimsStringBuilder.AppendLine($"Claim Type:{claim.Type}, Claim Value:{claim.Value}");
             }
 
-            _logger.LogInformation($"Identity token & user claims:" +
-            $"\n{identityToken} \n{userClaimsStringBuilder}" );
+            _logger.LogInformation($"Identity token, Access Token & user claims:" +
+            $"\n{identityToken} \n{accessToken} \n{userClaimsStringBuilder}" );
         }
     }
 }

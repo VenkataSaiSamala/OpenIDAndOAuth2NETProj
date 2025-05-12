@@ -27,27 +27,27 @@ public static class TestUsers
             {
                 new TestUser
                 {
-                    SubjectId = "7307ac72-d9cc-4981-b778-0be6dacc7c8c",
-                    Username = "alissa",
+                    SubjectId = "b7539694-97e7-4dfe-84da-b4256e1ff5c7",
+                    Username = "Emma",
                     Password = "password",
                     Claims =
                     {
-                        new Claim(JwtClaimTypes.Name, "Alissa South"),
-                        new Claim(JwtClaimTypes.GivenName, "Alissa"),
-                        new Claim(JwtClaimTypes.FamilyName, "South"),
+                        new Claim(JwtClaimTypes.Name, "Emma Flagg"),
+                        new Claim(JwtClaimTypes.GivenName, "Emma"),
+                        new Claim(JwtClaimTypes.FamilyName, "Flagg"),
                         new Claim("role", "FreeUser")
                     }
                 },
                 new TestUser
                 {
-                    SubjectId = "a92e79b7-e0c4-49c0-ab27-51d4491f0617",
-                    Username = "bobby",
+                    SubjectId = "d860efca-22d9-47fd-8249-791ba61b07c7",
+                    Username = "David",
                     Password = "password",
                     Claims =
                     {
-                        new Claim(JwtClaimTypes.Name, "Bobby South"),
-                        new Claim(JwtClaimTypes.GivenName, "Bobby"),
-                        new Claim(JwtClaimTypes.FamilyName, "South"),
+                        new Claim(JwtClaimTypes.Name, "David Flagg"),
+                        new Claim(JwtClaimTypes.GivenName, "David"),
+                        new Claim(JwtClaimTypes.FamilyName, "Flagg"),
                         new Claim("role", "PaidUser")
                     }
                 }

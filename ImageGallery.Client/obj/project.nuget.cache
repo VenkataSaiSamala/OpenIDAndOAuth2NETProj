@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "t8GgNC4dMK4=",
+  "dgSpecHash": "cDcKI3xGWIs=",
   "success": true,
   "projectFilePath": "/Users/venkatasamala/NETPROJECT/OAUTH2-OPENID-PROJECT/ImageGallery.Client/ImageGallery.Client.csproj",
   "expectedPackageFiles": [
+    "/Users/venkatasamala/.nuget/packages/identitymodel/6.0.0/identitymodel.6.0.0.nupkg.sha512",
+    "/Users/venkatasamala/.nuget/packages/identitymodel.aspnetcore/4.3.0/identitymodel.aspnetcore.4.3.0.nupkg.sha512",
     "/Users/venkatasamala/.nuget/packages/microsoft.aspnetcore.authentication.openidconnect/8.0.5/microsoft.aspnetcore.authentication.openidconnect.8.0.5.nupkg.sha512",
     "/Users/venkatasamala/.nuget/packages/microsoft.identitymodel.abstractions/7.1.2/microsoft.identitymodel.abstractions.7.1.2.nupkg.sha512",
     "/Users/venkatasamala/.nuget/packages/microsoft.identitymodel.jsonwebtokens/7.1.2/microsoft.identitymodel.jsonwebtokens.7.1.2.nupkg.sha512",
