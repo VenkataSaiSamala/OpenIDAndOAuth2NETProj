@@ -35,7 +35,8 @@ public static class TestUsers
                         new Claim(JwtClaimTypes.Name, "Emma Flagg"),
                         new Claim(JwtClaimTypes.GivenName, "Emma"),
                         new Claim(JwtClaimTypes.FamilyName, "Flagg"),
-                        new Claim("role", "FreeUser")
+                        new Claim("role", "FreeUser"),
+                        new Claim("country", "Germany"),
                     }
                 },
                 new TestUser
@@ -48,7 +49,8 @@ public static class TestUsers
                         new Claim(JwtClaimTypes.Name, "David Flagg"),
                         new Claim(JwtClaimTypes.GivenName, "David"),
                         new Claim(JwtClaimTypes.FamilyName, "Flagg"),
-                        new Claim("role", "PaidUser")
+                        new Claim("role", "PaidUser"),
+                        new Claim("country", "India"),
                     }
                 }
             };

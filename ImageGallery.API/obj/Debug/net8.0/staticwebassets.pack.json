@@ -1,6 +1,10 @@
 {
   "Files": [
     {
+      "Id": "/Users/venkatasamala/NETPROJECT/OAUTH2-OPENID-PROJECT/ImageGallery.API/wwwroot/Images/3a25b19c-505a-4ee3-9443-cfab5b8de62e.jpg",
+      "PackagePath": "staticwebassets/Images/3a25b19c-505a-4ee3-9443-cfab5b8de62e.jpg"
+    },
+    {
       "Id": "/Users/venkatasamala/NETPROJECT/OAUTH2-OPENID-PROJECT/ImageGallery.API/wwwroot/Images/3fbe2aea-2257-44f2-b3b1-3d8bacade89c.jpg",
       "PackagePath": "staticwebassets/Images/3fbe2aea-2257-44f2-b3b1-3d8bacade89c.jpg"
     },
@@ -49,6 +53,10 @@
       "PackagePath": "staticwebassets/Images/cd139111-c82e-4bc8-9f7d-43a1059bfe73.jpg"
     },
     {
+      "Id": "/Users/venkatasamala/NETPROJECT/OAUTH2-OPENID-PROJECT/ImageGallery.API/wwwroot/Images/d60a0a7e-5476-4c1d-8a62-41fc25f5ec4d.jpg",
+      "PackagePath": "staticwebassets/Images/d60a0a7e-5476-4c1d-8a62-41fc25f5ec4d.jpg"
+    },
+    {
       "Id": "/Users/venkatasamala/NETPROJECT/OAUTH2-OPENID-PROJECT/ImageGallery.API/wwwroot/Images/dc3f39bf-d1da-465d-9ea4-935902c2e3d2.jpg",
       "PackagePath": "staticwebassets/Images/dc3f39bf-d1da-465d-9ea4-935902c2e3d2.jpg"
     },
@@ -59,6 +67,10 @@
     {
       "Id": "/Users/venkatasamala/NETPROJECT/OAUTH2-OPENID-PROJECT/ImageGallery.API/wwwroot/Images/fdfe7329-e05c-41fb-a7c7-4f3226d28c49.jpg",
       "PackagePath": "staticwebassets/Images/fdfe7329-e05c-41fb-a7c7-4f3226d28c49.jpg"
+    },
+    {
+      "Id": "/Users/venkatasamala/NETPROJECT/OAUTH2-OPENID-PROJECT/ImageGallery.API/wwwroot/Images/ff6e51af-27aa-4697-a7d3-df2097c54f32.jpg",
+      "PackagePath": "staticwebassets/Images/ff6e51af-27aa-4697-a7d3-df2097c54f32.jpg"
     },
     {
       "Id": "obj/Debug/net8.0/staticwebassets/msbuild.ImageGallery.API.Microsoft.AspNetCore.StaticWebAssets.props",

@@ -1,6 +1,9 @@
+using ImageGallery.API.Authorizations;
 using ImageGallery.API.DbContexts;
 using ImageGallery.API.Services;
+using ImageGallery.Authorization;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.JsonWebTokens;
 
@@ -19,6 +22,8 @@ builder.Services.AddDbContext<GalleryContext>(options =>
 
 // register the repository
 builder.Services.AddScoped<IGalleryRepository, GalleryRepository>();
+builder.Services.AddHttpContextAccessor();
+builder.Services.AddScoped<IAuthorizationHandler, MustOwnImageHandler>();
 
 // register AutoMapper-related services
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
@@ -36,6 +41,20 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             ValidTypes = new[] {"at+jwt"}
         };
     });
+
+builder.Services.AddAuthorization(options =>
+{
+    options.AddPolicy("UserCanAddImage", AuthorizationPolicies.CanAddImage());
+    options.AddPolicy("ClientAppCanWrite", policy =>
+    {
+        policy.RequireClaim("scope", "imagegalleryapi.write");
+    });
+    options.AddPolicy("MustOwnImage", policy =>
+    {
+        policy.RequireAuthenticatedUser();
+        policy.Requirements.Add(new MustOwnImageRequirement());
+    });
+});
 
 var app = builder.Build();
 

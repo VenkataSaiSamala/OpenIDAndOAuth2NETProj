@@ -1,3 +1,4 @@
+using ImageGallery.Authorization;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.OpenIdConnect;
@@ -23,33 +24,45 @@ builder.Services.AddHttpClient("APIClient", client =>
     client.DefaultRequestHeaders.Add(HeaderNames.Accept, "application/json");
 }).AddUserAccessTokenHandler();
 
-builder.Services.AddAuthentication(options =>  {
+builder.Services.AddAuthentication(options =>
+{
     options.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
     options.DefaultChallengeScheme = OpenIdConnectDefaults.AuthenticationScheme;
 })
-.AddCookie(CookieAuthenticationDefaults.AuthenticationScheme, options => {
+.AddCookie(CookieAuthenticationDefaults.AuthenticationScheme, options =>
+{
     options.AccessDeniedPath = "/Authentication/AccessDenied";
 })
-.AddOpenIdConnect(OpenIdConnectDefaults.AuthenticationScheme, options => {
+.AddOpenIdConnect(OpenIdConnectDefaults.AuthenticationScheme, options =>
+{
     options.SignInScheme = CookieAuthenticationDefaults.AuthenticationScheme;
     options.Authority = "https://localhost:5001/";
     options.ClientId = "imagegalleryclient";
     options.ClientSecret = "secret";
     options.ResponseType = "code";
     //options.CallbackPath = new PathString("signin-oidc");
-    options.SaveTokens = true; 
+    options.SaveTokens = true;
     options.GetClaimsFromUserInfoEndpoint = true;
     options.ClaimActions.Remove("aud");
     options.ClaimActions.DeleteClaim("sid");
     options.ClaimActions.DeleteClaim("idp");
     options.Scope.Add("roles");
-    options.Scope.Add("imagegalleryapi.fullaccess");
+    options.Scope.Add("country");
+    options.Scope.Add("imagegalleryapi.read");
+    options.Scope.Add("imagegalleryapi.write");
     options.ClaimActions.MapJsonKey("role", "role");
-    options.TokenValidationParameters = new (){
+    options.ClaimActions.MapUniqueJsonKey("country", "country");
+    options.TokenValidationParameters = new()
+    {
         NameClaimType = "given_name",
         RoleClaimType = "role"
     };
 
+});
+
+builder.Services.AddAuthorization(options =>
+{
+    options.AddPolicy("UserCanAddImage", AuthorizationPolicies.CanAddImage());
 });
 
 var app = builder.Build();

@@ -1,0 +1,13 @@
+/Users/venkatasamala/NETPROJECT/OAUTH2-OPENID-PROJECT/ImageGallery.Authorization/bin/Debug/net8.0/ImageGallery.Authorization.deps.json
+/Users/venkatasamala/NETPROJECT/OAUTH2-OPENID-PROJECT/ImageGallery.Authorization/bin/Debug/net8.0/ImageGallery.Authorization.dll
+/Users/venkatasamala/NETPROJECT/OAUTH2-OPENID-PROJECT/ImageGallery.Authorization/bin/Debug/net8.0/ImageGallery.Authorization.pdb
+/Users/venkatasamala/NETPROJECT/OAUTH2-OPENID-PROJECT/ImageGallery.Authorization/obj/Debug/net8.0/ImageGallery.Authorization.csproj.AssemblyReference.cache
+/Users/venkatasamala/NETPROJECT/OAUTH2-OPENID-PROJECT/ImageGallery.Authorization/obj/Debug/net8.0/ImageGallery.Authorization.GeneratedMSBuildEditorConfig.editorconfig
+/Users/venkatasamala/NETPROJECT/OAUTH2-OPENID-PROJECT/ImageGallery.Authorization/obj/Debug/net8.0/ImageGallery.Authorization.AssemblyInfoInputs.cache
+/Users/venkatasamala/NETPROJECT/OAUTH2-OPENID-PROJECT/ImageGallery.Authorization/obj/Debug/net8.0/ImageGallery.Authorization.AssemblyInfo.cs
+/Users/venkatasamala/NETPROJECT/OAUTH2-OPENID-PROJECT/ImageGallery.Authorization/obj/Debug/net8.0/ImageGallery.Authorization.csproj.CoreCompileInputs.cache
+/Users/venkatasamala/NETPROJECT/OAUTH2-OPENID-PROJECT/ImageGallery.Authorization/obj/Debug/net8.0/ImageGallery.Authorization.sourcelink.json
+/Users/venkatasamala/NETPROJECT/OAUTH2-OPENID-PROJECT/ImageGallery.Authorization/obj/Debug/net8.0/ImageGallery.Authorization.dll
+/Users/venkatasamala/NETPROJECT/OAUTH2-OPENID-PROJECT/ImageGallery.Authorization/obj/Debug/net8.0/refint/ImageGallery.Authorization.dll
+/Users/venkatasamala/NETPROJECT/OAUTH2-OPENID-PROJECT/ImageGallery.Authorization/obj/Debug/net8.0/ImageGallery.Authorization.pdb
+/Users/venkatasamala/NETPROJECT/OAUTH2-OPENID-PROJECT/ImageGallery.Authorization/obj/Debug/net8.0/ref/ImageGallery.Authorization.dll

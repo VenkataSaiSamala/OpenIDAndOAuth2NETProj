@@ -127,7 +127,7 @@ namespace ImageGallery.Client.Controllers
             return RedirectToAction("Index");
         }
 
-        [Authorize(Roles = "PaidUser")]
+        [Authorize(Policy = "UserCanAddImage")]
         public IActionResult AddImage()
         {
             return View();
@@ -135,7 +135,7 @@ namespace ImageGallery.Client.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        [Authorize(Roles = "PaidUser")]
+        [Authorize(Policy = "UserCanAddImage")]
         public async Task<IActionResult> AddImage(AddImageViewModel addImageViewModel)
         {
             if (!ModelState.IsValid)

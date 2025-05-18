@@ -1,5 +1,7 @@
 ﻿using System.Linq.Expressions;
+using System.Security.Claims;
 using AutoMapper;
+using ImageGallery.API.Authorizations;
 using ImageGallery.API.Services;
 using ImageGallery.Model;
 using Microsoft.AspNetCore.Authorization;
@@ -50,8 +52,9 @@ namespace ImageGallery.API.Controllers
         }
 
         [HttpGet("{id}", Name = "GetImage")]
+        [MustOwnImage]
         public async Task<ActionResult<Image>> GetImage(Guid id)
-        {          
+        {
             var imageFromRepo = await _galleryRepository.GetImageAsync(id);
 
             if (imageFromRepo == null)
@@ -65,7 +68,8 @@ namespace ImageGallery.API.Controllers
         }
 
         [HttpPost()]
-        [Authorize(Roles = "PaidUser")]
+        [Authorize(Policy = "UserCanAddImage")]
+        [Authorize(Policy = "ClientAppCanWrite")]
         public async Task<ActionResult<Image>> CreateImage([FromBody] ImageForCreation imageForCreation)
         {
             // Automapper maps only the Title in our configuration
@@ -80,7 +84,7 @@ namespace ImageGallery.API.Controllers
 
             // create the filename
             string fileName = Guid.NewGuid().ToString() + ".jpg";
-            
+
             // the full file path
             var filePath = Path.Combine($"{webRootPath}/images/{fileName}");
 
@@ -93,8 +97,9 @@ namespace ImageGallery.API.Controllers
             // ownerId should be set - can't save image in starter solution, will
             // be fixed during the course
             var ownerId = User.Claims.FirstOrDefault(s => s.Type == "sub")?.Value;
-            
-            if(ownerId == null){
+
+            if (ownerId == null)
+            {
                 throw new Exception("User identifier is missing from token.");
             }
 

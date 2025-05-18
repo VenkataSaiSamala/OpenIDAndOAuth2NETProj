@@ -43,3 +43,10 @@
 /Users/venkatasamala/NETPROJECT/OAUTH2-OPENID-PROJECT/ImageGallery.Client/obj/Debug/net8.0/ImageGallery.Client.pdb
 /Users/venkatasamala/NETPROJECT/OAUTH2-OPENID-PROJECT/ImageGallery.Client/obj/Debug/net8.0/ImageGallery.Client.genruntimeconfig.cache
 /Users/venkatasamala/NETPROJECT/OAUTH2-OPENID-PROJECT/ImageGallery.Client/obj/Debug/net8.0/ref/ImageGallery.Client.dll
+/Users/venkatasamala/NETPROJECT/OAUTH2-OPENID-PROJECT/ImageGallery.Client/bin/Debug/net8.0/Microsoft.AspNetCore.Authorization.dll
+/Users/venkatasamala/NETPROJECT/OAUTH2-OPENID-PROJECT/ImageGallery.Client/bin/Debug/net8.0/Microsoft.AspNetCore.Metadata.dll
+/Users/venkatasamala/NETPROJECT/OAUTH2-OPENID-PROJECT/ImageGallery.Client/bin/Debug/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+/Users/venkatasamala/NETPROJECT/OAUTH2-OPENID-PROJECT/ImageGallery.Client/bin/Debug/net8.0/Microsoft.Extensions.Logging.Abstractions.dll
+/Users/venkatasamala/NETPROJECT/OAUTH2-OPENID-PROJECT/ImageGallery.Client/bin/Debug/net8.0/Microsoft.Extensions.Options.dll
+/Users/venkatasamala/NETPROJECT/OAUTH2-OPENID-PROJECT/ImageGallery.Client/bin/Debug/net8.0/ImageGallery.Authorization.dll
+/Users/venkatasamala/NETPROJECT/OAUTH2-OPENID-PROJECT/ImageGallery.Client/bin/Debug/net8.0/ImageGallery.Authorization.pdb
