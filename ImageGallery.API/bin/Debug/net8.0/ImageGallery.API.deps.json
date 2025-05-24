@@ -9,6 +9,7 @@
       "ImageGallery.API/1.0.0": {
         "dependencies": {
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
+          "IdentityModel.AspNetCore.OAuth2Introspection": "5.0.0",
           "ImageGallery.Authorization": "1.0.0",
           "ImageGallery.Model": "1.0.0",
           "Microsoft.EntityFrameworkCore.Sqlite": "8.0.1",
@@ -47,6 +48,29 @@
           "lib/net6.0/Humanizer.dll": {
             "assemblyVersion": "2.14.0.0",
             "fileVersion": "2.14.1.48190"
+          }
+        }
+      },
+      "IdentityModel/5.0.0": {
+        "dependencies": {
+          "System.Text.Encodings.Web": "8.0.0",
+          "System.Text.Json": "8.0.0"
+        },
+        "runtime": {
+          "lib/net5.0/IdentityModel.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.0.0"
+          }
+        }
+      },
+      "IdentityModel.AspNetCore.OAuth2Introspection/5.0.0": {
+        "dependencies": {
+          "IdentityModel": "5.0.0"
+        },
+        "runtime": {
+          "lib/net5.0/IdentityModel.AspNetCore.OAuth2Introspection.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.0.0"
           }
         }
       },
@@ -838,6 +862,20 @@
       "sha512": "sha512-lQKvtaTDOXnoVJ20ibTuSIOf2i0uO0MPbDhd1jm238I+U/2ZnRENj0cktKZhtchBMtCUSRQ5v4xBCUbKNmyVMw==",
       "path": "humanizer.core/2.14.1",
       "hashPath": "humanizer.core.2.14.1.nupkg.sha512"
+    },
+    "IdentityModel/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6RrLvB00uRlsrqGL6BGRegRDBpW2/VMfI/uypxkJ6xk12H8r9YuIz8MdfgIeYz7BBQaWJ294GSWJao48nOKskQ==",
+      "path": "identitymodel/5.0.0",
+      "hashPath": "identitymodel.5.0.0.nupkg.sha512"
+    },
+    "IdentityModel.AspNetCore.OAuth2Introspection/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-atD6d02Ll+8CT8DGobmpH3zbCwZDkekSCtLTwBgP6d86gwQ1RdManETIU3YrGTVOwNOC7jaqzfCkTZ4Rv8GDOw==",
+      "path": "identitymodel.aspnetcore.oauth2introspection/5.0.0",
+      "hashPath": "identitymodel.aspnetcore.oauth2introspection.5.0.0.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Authentication.JwtBearer/8.0.5": {
       "type": "package",

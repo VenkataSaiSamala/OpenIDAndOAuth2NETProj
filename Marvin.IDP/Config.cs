@@ -18,7 +18,8 @@ public static class Config
         new ApiResource[]
             {
                 new ApiResource("imagegalleryapi", "Image Gallery API", new [] {"role", "country"}){
-                    Scopes = {"imagegalleryapi.fullaccess", "imagegalleryapi.read", "imagegalleryapi.write"}
+                    Scopes = {"imagegalleryapi.fullaccess", "imagegalleryapi.read", "imagegalleryapi.write"},
+                    ApiSecrets = {new Secret("apisecret".Sha256())}
                 }
             };
     public static IEnumerable<ApiScope> ApiScopes =>
@@ -26,7 +27,7 @@ public static class Config
             {
                 new ApiScope("imagegalleryapi.fullaccess"),
                 new ApiScope("imagegalleryapi.read"),
-                new ApiScope("imagegalleryapi.write"),
+                new ApiScope("imagegalleryapi.write")
             };
 
     public static IEnumerable<Client> Clients =>
@@ -36,6 +37,13 @@ public static class Config
                     ClientName = "Image Gallery",
                     ClientId="imagegalleryclient",
                     AllowedGrantTypes = GrantTypes.Code,
+                    AccessTokenType = AccessTokenType.Reference,
+                    AllowOfflineAccess = true,
+                    UpdateAccessTokenClaimsOnRefresh = true,
+                    AccessTokenLifetime = 120,
+                    
+                    //AuthorizationCodeLifetime = ...
+                    //IdentityTokenLifetime = ....
                     RedirectUris = {
                         "https://localhost:7184/signin-oidc"
                     },

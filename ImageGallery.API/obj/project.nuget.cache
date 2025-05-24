@@ -1,12 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "zhenfoCij+Q=",
+  "dgSpecHash": "H8MWozFDLSI=",
   "success": true,
   "projectFilePath": "/Users/venkatasamala/NETPROJECT/OAUTH2-OPENID-PROJECT/ImageGallery.API/ImageGallery.API.csproj",
   "expectedPackageFiles": [
     "/Users/venkatasamala/.nuget/packages/automapper/12.0.1/automapper.12.0.1.nupkg.sha512",
     "/Users/venkatasamala/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/12.0.1/automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "/Users/venkatasamala/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
+    "/Users/venkatasamala/.nuget/packages/identitymodel/5.0.0/identitymodel.5.0.0.nupkg.sha512",
+    "/Users/venkatasamala/.nuget/packages/identitymodel.aspnetcore.oauth2introspection/5.0.0/identitymodel.aspnetcore.oauth2introspection.5.0.0.nupkg.sha512",
     "/Users/venkatasamala/.nuget/packages/microsoft.aspnetcore.authentication.jwtbearer/8.0.5/microsoft.aspnetcore.authentication.jwtbearer.8.0.5.nupkg.sha512",
     "/Users/venkatasamala/.nuget/packages/microsoft.aspnetcore.authorization/8.0.5/microsoft.aspnetcore.authorization.8.0.5.nupkg.sha512",
     "/Users/venkatasamala/.nuget/packages/microsoft.aspnetcore.metadata/8.0.5/microsoft.aspnetcore.metadata.8.0.5.nupkg.sha512",
